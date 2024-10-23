@@ -17,33 +17,27 @@
             text-align: center;
             padding: 20px;
         }
-        .container {
-            max-width: 800px;
-            margin: 20px auto; /* Centrare pe orizontală */
+         main {
             padding: 20px;
-            background-color: rgb(232, 199, 199);
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            font-size: 18px;
         }
         h2 {
-            color: #ecf0f0; /* Verde */
-            border-bottom: 2px solid #4caf50;
-            padding-bottom: 10px;
+            color: #ff9800; /* Portocaliu */
         }
-        ul {
-            line-height: 1.6; /* Între rânduri mai mari pentru ușurința citirii */
-            margin-left: 20px;
-        }
-        p {
-            margin: 10px 0; /* Spațiu între paragrafe */
-        }
-        .image {
-            text-align: center; /* Imagine centrată */
-            margin-top: 40px; /* Spațiu între container și imagine */
+        .media-container {
+            display: flex; /* Folosește flexbox pentru a alinia elementele pe același rând */
+            justify-content: space-around; /* Spațiu egal între elemente */
+            align-items: center; /* Centrează vertical elementele */
+            margin: 20px 0;
         }
         img {
-            max-width: 100%; /* Imaginea se ajustează în funcție de lățimea paginii */
+            max-width: 45%; /* Setează lățimea maximă a imaginii */
             height: auto; /* Menține proporțiile imaginii */
+        }
+        video {
+            max-width: 45%; /* Setează lățimea maximă a videoclipului */
+            height: auto; /* Menține proporțiile videoclipului */
         }
     </style>
 </head>
