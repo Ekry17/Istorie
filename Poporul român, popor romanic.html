@@ -127,6 +127,22 @@
     </div>
 </main>
 
+    <script>
+    let zoomLevel = 1;
+
+    document.addEventListener('wheel', function(event) {
+        if (event.deltaY < 0) {
+            // Scroll up -> Zoom In
+            zoomLevel += 0.1;
+        } else {
+            // Scroll down -> Zoom Out
+            zoomLevel -= 0.1;
+        }
+        zoomLevel = Math.min(Math.max(zoomLevel, 0.5), 3); // Limitează zoom între 0.5 și 3
+        document.getElementById("content").style.transform = `scale(${zoomLevel})`;
+    });
+</script>
+
 </body>
 </html>
 
